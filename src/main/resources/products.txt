@@ -1,0 +1,2 @@
+34fe03fb-9df7-45ab-bf5b-67b9cfe18120|Coca Cola|Refresco Coca Cola|49.50
+34fe03fb-9df7-45ab-bf5b-67b9cfe18345|Clorox|Producto de limpieza|28.78
