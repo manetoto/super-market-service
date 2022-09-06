@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "6feae644-586d-498e-8b5c-3dca8a04a86b",
+		"name": "Api-Rest-Super-Market",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-ID",
+						"value": "Manuel",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Galletas Marias\",\n        \"description\": \"Galletas\",\n        \"price\": 29.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "88de9a98-2fa0-490e-99d7-45232e0138b6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "34fe03fb-9df7-45ab-bf5b-67b9cfe183456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"description\": \"Galletas marinela\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "e5246dc6-a482-4e81-958a-dba1362132e4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get External Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-ID",
+						"value": "Manuel",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/miempresa/compras/external",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"miempresa",
+						"compras",
+						"external"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
